@@ -1,3 +1,18 @@
+1.1.3 (2023-10-04)
+==================
+
+Fixes:
+- fix target of 'open Orthanc Explorer 2' button in legacy OE
+- repair tables background color (bug in 1.1.2)
+
+1.1.2 (2023-10-03)
+==================
+
+Fixes:
+- new labels now appears/disappears on the side bar when they are created/deleted from a study
+- study labels are listed correctly when reoopening a study
+
+
 1.1.1 (2023-09-18)
 ==================
 
