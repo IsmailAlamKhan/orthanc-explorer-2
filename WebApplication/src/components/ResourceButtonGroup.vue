@@ -1,14 +1,14 @@
 <script>
-import Modal from "./Modal.vue"
-import ShareModal from "./ShareModal.vue"
-import ModifyModal from "./ModifyModal.vue"
 import $ from "jquery"
 import { mapState } from "vuex"
-import api from "../orthancApi"
-import resourceHelpers from "../helpers/resource-helpers"
 import clipboardHelpers from "../helpers/clipboard-helpers"
-import TokenLinkButton from "./TokenLinkButton.vue"
+import resourceHelpers from "../helpers/resource-helpers"
+import api from "../orthancApi"
 import BulkLabelsModal from "./BulkLabelsModal.vue"
+import Modal from "./Modal.vue"
+import ModifyModal from "./ModifyModal.vue"
+import ShareModal from "./ShareModal.vue"
+import TokenLinkButton from "./TokenLinkButton.vue"
 
 export default {
     props: ["resourceOrthancId", "resourceDicomUid", "resourceLevel", "customClass", "seriesMainDicomTags", "studyMainDicomTags", "patientMainDicomTags", "instanceTags"],
@@ -413,7 +413,7 @@ export default {
     <div>
         <div class="btn-group">
             <span v-for="viewer in uiOptions.ViewersOrdering" :key="viewer">
-                <TokenLinkButton v-if="viewer == 'meddream' && hasMedDreamViewerButton"
+                <!-- <TokenLinkButton v-if="viewer == 'meddream' && hasMedDreamViewerButton"
                     :disabled="!isMedDreamViewerButtonEnabled"
                     :iconClass="medDreamViewerIcon" :level="computedResourceLevel" :linkUrl="medDreamViewerUrl"
                     :resourcesOrthancId="resourcesOrthancId" :title="$t('view_in_meddream')"
@@ -439,7 +439,7 @@ export default {
                     :iconClass="volViewIcon" :level="computedResourceLevel" :linkUrl="volViewUrl"
                     :resourcesOrthancId="resourcesOrthancId" :title="$t('view_in_volview')"
                     :tokenType="'viewer-instant-link'" :opensInNewTab="true">
-                </TokenLinkButton>
+                </TokenLinkButton> -->
 
                 <TokenLinkButton v-if="viewer == 'ohif' && hasOhifViewerButton"
                     :disabled="!isOhifButtonEnabled"

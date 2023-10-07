@@ -1,11 +1,11 @@
 <script>
 
-import UploadHandler from "./UploadHandler.vue"
+import { mapState } from "vuex";
+import { orthancApiUrl } from "../globalConfigurations";
+import api from "../orthancApi";
 import JobsList from "./JobsList.vue";
 import LanguagePicker from "./LanguagePicker.vue";
-import { mapState } from "vuex"
-import { orthancApiUrl, oe2ApiUrl } from "../globalConfigurations";
-import api from "../orthancApi"
+import UploadHandler from "./UploadHandler.vue";
 
 export default {
     props: [],
@@ -120,7 +120,7 @@ export default {
 <template>
     <div class="nav-side-menu">
         <div>
-            <img class="orthanc-logo" src="..//assets/images/orthanc.png" height="48" />
+            <img class="orthanc-logo" src="..//assets/images/orthanc.png" height="50" />
         </div>
         <div v-if="uiOptions.ShowOrthancName" class="orthanc-name">
             <p>{{ system.Name }}</p>
