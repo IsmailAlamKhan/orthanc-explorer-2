@@ -52,7 +52,7 @@
             "ViewersIcons" : {
                 "osimis-web-viewer": "bi bi-eye",
                 "stone-webviewer": "bi bi-eye-fill",
-                "ohif": "bi bi-grid",
+                "ohif": "bi bi-eye",
                 "ohif-vr": "bi bi-grid-1x2",
                 "ohif-tmtv": "bi bi-grid-3x3-gap",
                 "meddream": "bi bi-columns-gap",
@@ -60,8 +60,8 @@
             },
             // Defines the order in which the viewer icons should appear in the interface
             "ViewersOrdering" : [
-                "osimis-web-viewer",
-                "stone-webviewer",
+                // "osimis-web-viewer",
+                // "stone-webviewer",
                 "ohif",
                 "ohif-vr",
                 "ohif-tmtv",
