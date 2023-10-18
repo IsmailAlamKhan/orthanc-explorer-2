@@ -122,8 +122,8 @@ export default {
         <div>
             <img class="orthanc-logo" src="..//assets/images/orthanc.png" height="50" />
         </div>
-        <div v-if="uiOptions.ShowOrthancName" class="orthanc-name">
-            <p>{{ system.Name }}</p>
+        <div class="orthanc-name">
+            <p>Powered by NeuroCare.AI</p>
         </div>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapse out">
