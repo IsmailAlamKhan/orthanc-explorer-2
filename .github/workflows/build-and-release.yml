@@ -110,7 +110,10 @@ jobs:
       with:
         name: web-app-dist
         path: WebApplication/dist
-
+    - uses: actions/setup-cmake@v3
+      with:
+        cmake-version: latest
+  
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build  ${{matrix.config.extraCMakeFlags}} -DORTHANC_FRAMEWORK_SOURCE=web -DORTHANC_FRAMEWORK_VERSION="1.11.2" -DPLUGIN_VERSION="${{needs.pre-build.outputs.current_branch_tag}}" -DSTATIC_BUILD=ON -DALLOW_DOWNLOADS=ON -DUSE_SYSTEM_ORTHANC_SDK=OFF -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
       env: 
