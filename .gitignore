@@ -1,0 +1,8 @@
+WebApplication/node_modules
+WebApplication/dist/
+ThirdPartyDownloads/
+.DS_Store
+dist-ssr
+*.local
+.vscode/
+*~
