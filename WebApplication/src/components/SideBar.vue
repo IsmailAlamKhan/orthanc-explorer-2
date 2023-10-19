@@ -120,7 +120,7 @@ export default {
 <template>
     <div class="nav-side-menu">
         <div>
-            <img class="orthanc-logo" src="..//assets/images/orthanc.png" height="48" />
+            <img src="..//assets/images/orthanc.png" height="48" />
         </div>
         <div  class="orthanc-name">
             <p>Powered By NeuroCare.AI</p>
@@ -253,9 +253,6 @@ export default {
     font-weight: 500;
 }
 
-.orthanc-logo {
-    filter: brightness(50);
-}
 
 .nav-side-menu {
     font-family: verdana;
