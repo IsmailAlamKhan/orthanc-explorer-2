@@ -120,7 +120,7 @@ export default {
 <template>
     <div class="nav-side-menu">
         <div>
-            <img class="orthanc-logo" src="..//assets/images/orthanc.png" height="50" />
+            <img src="..//assets/images/orthanc.png" height="50" />
         </div>
         <div class="orthanc-name">
             <p>Powered by NeuroCare.AI</p>
